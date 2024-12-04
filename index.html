@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile của Nguyen Thi Hong Thi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient nền đẹp */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Nền tối để làm nổi bật nội dung */
+            padding: 30px;
+            border-radius: 25px;
+            width: 80%;
+            max-width: 1100px;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); /* Shadow tạo độ sâu */
+            transition: transform 0.3s ease; /* Hiệu ứng zoom nhẹ khi hover */
+        }
+
+        .container:hover {
+            transform: scale(1.05); /* Phóng to khi di chuột vào */
+        }
+
+        .profile-picture img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-picture img:hover {
+            transform: rotate(10deg); /* Hiệu ứng xoay nhẹ khi hover vào ảnh */
+        }
+
+        .profile-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .profile-info p {
+            font-size: 1.3em;
+            margin: 10px 0;
+            line-height: 1.5;
+            color: #f1f1f1;
+        }
+
+        .profile-info p strong {
+            color: #ffcc00; /* Màu vàng cho thông tin quan trọng */
+        }
+
+        /* Thêm một chút hiệu ứng cho các phần tử text */
+        .profile-info p:hover {
+            color: #ffcc00;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-picture">
+            <img src="your-image.jpg" alt="Profile Picture"> <!-- Thay 'your-image.jpg' với đường dẫn đến ảnh cá nhân -->
+        </div>
+        <div class="profile-info">
+            <h1>Nguyen Thi Hong Thi</h1>
+            <p><strong>Age:</strong> 17</p>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Nationality:</strong> Vietnamese</p>
+            <p><strong>Hobby:</strong> Sleep</p>
+            <p><strong>Dream:</strong> Becoming A Doctor</p>
+        </div>
+    </div>
+</body>
+</html>
